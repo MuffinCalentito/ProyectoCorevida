@@ -5,7 +5,7 @@ export default function NavBar(){
     return(  
         <nav className="navbar">
             <div className='navbar-container'>
-                <Link to="/" className='nav-logo'><img src="/src/assets/corevida.png" width="100px"/></Link>
+                <Link to="/" className='nav-logo'><img src="/src/assets/corevida.png" height="64.8px" width="80px"/></Link>
                 <ul className='nav-menu'>
                     <li className='nav-item'>
                         <Link to="/" className='nav-link'>Inicio</Link>
