@@ -8,6 +8,16 @@
     flex-direction: column;
     gap: 10px;
 }
+.contenedor5{
+    background-image: linear-gradient(to bottom, #fff, #1a45bb);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.contenedor5 h2{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
 .contenedor3{
     display: flex;
     justify-content: center;
@@ -16,6 +26,7 @@
     height: 200px;
     margin-top: 80px;
 }
+
 .eslogan{
     margin: 60px 0 0 0;
     font-size: 33px;

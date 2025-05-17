@@ -8,8 +8,10 @@ export default function Inicio(){
             </div>
             <div className='contenedor2'>
                 <img className="imgs-principal" src="/src/assets/img-principal.jpg" alt="Imagen-principal" height="750px" />
-                <h2 className='eslogan'>Nos enfocamos en...</h2>
             </div>
+            <div className='contenedor5'>
+                <h2 className='eslogan'>Nos enfocamos en...</h2>
+            
             <div className='contenedor3'>
                 <img className="img-hexa" src="/src/assets/hexa-ejercicio.png" alt="hexa-ejercicio" width="320px" height="auto"/>
                 <img className="img-hexa" src="/src/assets/hexa-recuperacion.png" alt="hexa-recuperacion" width="320px" height="auto"/>
@@ -27,6 +29,7 @@ export default function Inicio(){
                 <div className='columna'>
                     <img src='/src/assets/nutricion-info.png' alt='nutricion-info'/>
                     <p>Gestionamos tu bienestar con planes personalizados, seguimiento constante y tecnología avanzada para asegurar resultados efectivos y sostenibles.</p>
+                </div>
                 </div>
             </div>
             

@@ -1,3 +1,9 @@
+import './Nosotros.css'
 export default function Nosotros(){
-    return <h1>Hola mundo</h1>;
+    return (
+        <div>
+            <h1>Hola mundo</h1>;
+            
+        </div>
+    );
 }
