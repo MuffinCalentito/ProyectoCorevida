@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    background-color: #0879ea;
+    background-color: #12b325;
     height: 80px;
     position: sticky;
     top: 0;
@@ -50,5 +50,5 @@
 }
 .nav-link:hover{
     color: #ffffff;
-    background-color: #066ed5;
+    background-color: #0da217;
 }

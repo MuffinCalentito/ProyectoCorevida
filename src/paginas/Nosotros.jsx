@@ -1,7 +1,7 @@
 import './Nosotros.css'
 export default function Nosotros(){
     return (
-        <div className='contenedor-principal'>
+        <div className='contenedor-principals'>
             <div className='contenedor-1'>
                 <h2>Sobre Nosotros</h2>
                 <div className='contenido'>

@@ -1,4 +1,7 @@
-.contenedor-principal h2{
+.contenedor-principals{
+    background: linear-gradient(to top, white, #1abba3);
+}
+.contenedor-principals h2{
     text-align: center;
     margin-bottom: 30px;
     font-size: 40px;
