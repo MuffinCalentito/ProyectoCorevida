@@ -1,12 +1,43 @@
-# React + Vite
+CoreVida - Tu Espacio Integral de Bienestar
+Bienvenido al repositorio de CoreVida, una moderna aplicación web desarrollada con React y Vite diseñada para ser tu compañero en el camino hacia un estilo de vida saludable y equilibrado. CoreVida ofrece información detallada sobre nuestros servicios de gimnasio, fisioterapia y nutrición, todo ello en una interfaz de usuario atractiva y completamente responsive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características Destacadas
+Diseño Responsivo: Adaptado para una experiencia óptima en cualquier dispositivo (ordenadores de escritorio, tablets y móviles).
 
-Currently, two official plugins are available:
+Interfaz de Usuario Moderna: Construida con una paleta de colores fresca y una tipografía clara para una experiencia visual agradable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Navegación Fluida (SPA): Implementación de react-router-dom para transiciones rápidas entre secciones sin recargas de página.
 
-## Expanding the ESLint configuration
+Componentes Reutilizables: Código modular y fácil de mantener gracias al enfoque de componentes de React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Información Detallada de Servicios: Secciones dedicadas para Gimnasio, Fisioterapia y Nutrición, con descripciones claras y relevantes.
+
+Scroll al Inicio de Página: Cada vez que navegas a una nueva sección, la vista se desplaza automáticamente al inicio para una mejor usabilidad.
+
+Tecnologías Utilizadas
+React: La librería de JavaScript para construir interfaces de usuario.
+
+Vite: Un entorno de desarrollo rápido y ligero para proyectos web.
+
+React Router DOM: Para manejar el enrutamiento y la navegación en la aplicación.
+
+HTML5 & CSS3: Para la estructura y los estilos, utilizando Flexbox y CSS Grid para el diseño responsive.
+
+JavaScript (ES6+): Para la lógica interactiva de la aplicación.
+
+Instalación y Uso
+Requisitos Previos
+Asegúrate de tener instalado Node.js en tu sistema.
+
+Pasos:
+Clona el repositorio:
+
+git clone https://github.com/MuffinCalentito/ProyectoCorevida.git
+cd nombre-del-repositorio
+Instala las dependencias dentro de la terminal:
+
+npm install
+Inicia el servidor de desarrollo:
+
+npm run dev
+Abre tu navegador: Visita la URL proporcionada por la consola.
