@@ -1,38 +1,34 @@
-import './Inicio.css'
+import './Inicio.css';
 
 export default function Inicio(){
     return (
-        <div className="contenedor">
-            <div className='contenedor1'>
-                <h2 className='eslogan'>Transforma tu cuerpo, transforma tu vida. Bienvenido a CoreVida, tu espacio integral de bienestar.</h2>
-            </div>
-            <div className='contenedor2'>
-                <img className="imgs-principal" src="/src/assets/img-principal.jpg" alt="Imagen-principal" height="750px" />
-            </div>
-            <div className='contenedor5'>
-                <h2 className='eslogan'>Nos enfocamos en...</h2>
-            
-            <div className='contenedor3'>
-                <img className="img-hexa" src="/src/assets/hexa-ejercicio.png" alt="hexa-ejercicio" width="320px" height="auto"/>
-                <img className="img-hexa" src="/src/assets/hexa-recuperacion.png" alt="hexa-recuperacion" width="320px" height="auto"/>
-                <img className="img-hexa" src="/src/assets/hexa-nutricion.png" alt="hexa-nutricion" width="320px" height="auto"/>
-            </div>
-            <div className='contenedor4'>
-                <div className='columna'>
-                    <img src='/src/assets/ejercicio-info.png' alt='ejercicio-info'/>
-                    <p>El ejercicio previene enfermedades, mejora el ánimo y aumenta la energía. ¡Es clave para una vida saludable!</p>
+        <div className="home-container">
+            <section className="hero-section">
+                <div className="hero-content">
+                    <h1 className="hero-slogan">Transforma tu cuerpo, transforma tu vida. Bienvenido a CoreVida, tu espacio integral de bienestar.</h1>
                 </div>
-                <div className='columna'>
-                    <img src='/src/assets/recuperacion-info.png' alt='recuperacion-info'/>
-                    <p>En CoreVida, utilizamos Nutrixia y tecnología avanzada para ofrecerte un servicio único y eficaz, garantizando resultados y un acompañamiento constante. ¡Tu bienestar es nuestra prioridad!</p>
+                <div className="hero-image-wrapper">
+                    <img className="hero-image" src="/src/assets/img-principal.jpg" alt="Personas entrenando en gimnasio" />
                 </div>
-                <div className='columna'>
-                    <img src='/src/assets/nutricion-info.png' alt='nutricion-info'/>
-                    <p>Gestionamos tu bienestar con planes personalizados, seguimiento constante y tecnología avanzada para asegurar resultados efectivos y sostenibles.</p>
+            </section>
+
+            <section className="focus-section">
+                <h2 className="section-title">Nos enfocamos en...</h2>
+                <div className="focus-items">
+                    <div className="focus-item">
+                        <img className="focus-icon" src="/src/assets/hexa-ejercicio.png" alt="Icono de Ejercicio"/>
+                        <p>El ejercicio previene enfermedades, mejora el ánimo y aumenta la energía. ¡Es clave para una vida saludable!</p>
+                    </div>
+                    <div className="focus-item">
+                        <img className="focus-icon" src="/src/assets/hexa-recuperacion.png" alt="Icono de Recuperación"/>
+                        <p>En CoreVida, utilizamos Nutrixia y tecnología avanzada para ofrecerte un servicio único y eficaz, garantizando resultados y un acompañamiento constante. ¡Tu bienestar es nuestra prioridad!</p>
+                    </div>
+                    <div className="focus-item">
+                        <img className="focus-icon" src="/src/assets/hexa-nutricion.png" alt="Icono de Nutrición"/>
+                        <p>Gestionamos tu bienestar con planes personalizados, seguimiento constante y tecnología avanzada para asegurar resultados efectivos y sostenibles.</p>
+                    </div>
                 </div>
-                </div>
-            </div>
-            
+            </section>
         </div>
     );
 }

@@ -1,44 +1,75 @@
 .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 20px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: var(--spacing-large) var(--spacing-medium);
     text-align: center;
-  }
-  
-  .footer h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
-  
-  .all-contact{
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    margin-bottom: var(--spacing-large);
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+.contact-info {
     display: flex;
-    flex-direction: row;   /* asegúrate de que esté en fila */
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
-    gap: 20px;               
-  }
-  .contact-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+}
+
+.contact-item {
     display: flex;
     align-items: center;
+    gap: var(--spacing-small);
+    font-size: 1.1em;
+}
+
+.contact-item img {
+    width: 32px;
+    height: 32px;
+    filter: invert(100%);
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
     justify-content: center;
-    gap: 15px;
-  }
-  
-  .contact-item img {
+    gap: var(--spacing-medium);
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+}
+
+.social-links img {
     width: 40px;
     height: 40px;
-  }
-  
-  .contact-item p {
-    margin: 0;
-    font-size: 16px;
-  }
+    transition: transform 0.3s ease;
+}
 
-.more-contacts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    height: 20px;
-    margin-top: 50px;
+.social-links img:hover {
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-medium);
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
 }

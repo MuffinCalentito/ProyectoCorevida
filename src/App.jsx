@@ -4,11 +4,13 @@ import Footer from './componentes/Footer';
 import Inicio from './paginas/Inicio';
 import Nosotros from './paginas/Nosotros';
 import Servicios from './paginas/Servicios';
+import ScrollToTop from './componentes/ScrollToTop';
 import './App.css'
 
 function App() {
   return (
     <>
+    <ScrollToTop />
     <NavBar />
     <Routes>
       <Route path="/" element={<Inicio />}/>

@@ -1,54 +1,110 @@
-.navbar{
-    display: flex;
-    background-color: #12b325;
+.navbar {
+    background-color: var(--primary-color);
     height: 80px;
     position: sticky;
     top: 0;
     left: 0;
-    right: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 var(--spacing-medium);
 }
 
-.navbar-container{
+.navbar-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
 }
 
-.nav-logo{
-    background-color: rgb(255, 253, 253);
+.nav-logo img {
+    height: 60px;
+    width: auto;
     padding: 0;
     margin: 0;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     list-style: none;
-    margin: 0 0 0 380px;
     padding: 0;
+    margin: 0;
     align-items: center;
-    justify-content: center;
 }
-.nav-item{
-    font-size: 18px;
-    margin: 0 10px;
+
+.nav-item {
+    font-size: 1.1em;
+    margin: 0 var(--spacing-small);
 }
-.nav-link{
-    color: white;
+
+.nav-link {
+    color: var(--white);
     text-decoration: none;
-    padding: 15px 20px;
+    padding: var(--spacing-small) var(--spacing-medium);
     display: block;
-    line-height: 50px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: var(--border-radius);
+    font-weight: 600;
 }
-.nav-link:hover{
-    color: #ffffff;
-    background-color: #0da217;
+
+.nav-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        padding: var(--spacing-medium) 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        margin: var(--spacing-small) 0;
+    }
+
+    .nav-link {
+        padding: var(--spacing-medium);
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }

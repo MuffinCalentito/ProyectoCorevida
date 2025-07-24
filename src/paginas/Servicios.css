@@ -1,100 +1,90 @@
-.contenedor-principal{
-    background: linear-gradient(to top, white, #1ab6bb);
-}
-.contenedor-principal h2{
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-.titulo{
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding: 30px;
-    margin: 0;
-}
-.contenedores-1{
-    display: flex;
-    max-width: 1000px;
+.services-container {
+    padding: var(--spacing-large) 0;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    align-items: stretch;
-    gap: 20px;
-    background-color: rgb(255, 230, 0);
-    padding-right: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-}
-.contenedores-1 img{
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.contenedores-1 p{
-    margin: 0;
-    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    text-align-last: center;
+    flex-direction: column;
+    gap: var(--spacing-large);
 }
 
-.contenedores-2{
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: stretch;
-    gap: 20px;
-    background-color: rgb(58, 83, 90);
-    padding-right: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-}
-.contenedores-2 img{
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.contenedores-2 p{
-    margin: 0;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    text-align-last: center;
-    color: rgb(236, 236, 236);
+.page-title {
+    text-align: center;
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-large);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.contenedores-3{
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: stretch;
-    gap: 20px;
-    
-    padding-right: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    margin-bottom: 40px;
+.service-section {
+    padding: var(--spacing-large) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-large);
 }
-.contenedores-3 img{
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+
+.gym-service {
+    background: linear-gradient(to top, var(--white), var(--primary-color));
 }
-.contenedores-3 p{
-    margin: 0;
-    flex: 1;
+
+.physiotherapy-service {
+    background: linear-gradient(to top, var(--white), var(--secondary-color));
+}
+
+.nutritionist-service {
+    background: linear-gradient(to top, var(--white), #f0c20e);
+}
+
+.service-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-large);
+    padding: var(--spacing-medium);
+}
+
+.service-content {
     display: flex;
+    gap: var(--spacing-large);
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.service-content img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-content p {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.15em;
     text-align: justify;
-    text-align-last: center;
+    padding: var(--spacing-medium);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 769px) {
+    .service-content {
+        flex-direction: row;
+    }
+
+    .service-content.reverse-order {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-content {
+        flex-direction: column;
+    }
+    .service-content p {
+        text-align: center;
+    }
 }
